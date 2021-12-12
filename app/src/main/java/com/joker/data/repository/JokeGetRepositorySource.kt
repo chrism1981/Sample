@@ -19,5 +19,5 @@ interface JokeGetRepositorySource {
     fun addToFavorite(joke: JokeInfo,context: Context,success: ()->Unit)
     fun updateJoke(joke:JokeInfo,context: Context,success: ()->Unit)
     fun deleteJoke(joke:JokeInfo,context: Context)
-    suspend fun getWordsList(context: Context): LiveData<PagedList<Words>>?
+    suspend fun getWordsList(context: Context): LiveData<List<Words>>?
 }

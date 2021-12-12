@@ -10,6 +10,9 @@ class Words {
     override fun hashCode(): Int {
         return super.hashCode()
     }
+    fun countString():String{
+        return counts.toString()
+    }
 
     override fun toString(): String {
         return super.toString()

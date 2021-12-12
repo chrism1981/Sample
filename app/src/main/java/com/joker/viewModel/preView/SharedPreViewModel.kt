@@ -35,7 +35,7 @@ class SharedPreViewModel @Inject constructor(private val jokeGetRepository: Joke
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
     val jokeInfo: MutableLiveData<JokeInfo> by lazy { MutableLiveData<JokeInfo>() }
     var jokes: LiveData<PagedList<JokeInfo>>? = null
-    var words: LiveData<PagedList<Words>>? = null
+    var words: LiveData<List<Words>>? = null
 
     //if add a new joke, notify the joke list
     var upDatedId = MutableLiveData<String>()
@@ -65,12 +65,8 @@ class SharedPreViewModel @Inject constructor(private val jokeGetRepository: Joke
         return jokes
     }
 
-    suspend fun getWordsList(context: Context): LiveData<PagedList<Words>>? {
-        viewModelScope.launch {
-            withContext(Dispatchers.IO) {
-                words = jokeGetRepository.getWordsList(context)?:words
-            }
-        }
+    suspend fun getWordsList(context: Context): LiveData<List<Words>>? {
+        words = jokeGetRepository.getWordsList(context)
         return words
     }
 
@@ -78,16 +74,23 @@ class SharedPreViewModel @Inject constructor(private val jokeGetRepository: Joke
 
     fun addToFavorite(context: Context) {
         jokeInfo.value?.let {
-            jokeGetRepository.addToFavorite(it, context) {
-                //lambda is called when inserting successful
-                upDatedId.value = it.id
-                Toast.makeText(context,"added to favorite list",Toast.LENGTH_SHORT).show()
+            viewModelScope.launch {
+                jokeGetRepository.addToFavorite(it, context) {
+                    //lambda is called when inserting successful
+                    upDatedId.value = it.id
+                    Toast.makeText(context,"added to favorite list",Toast.LENGTH_SHORT).show()
+                }
+                jokeGetRepository.getWordsList(context)
             }
+
         }
     }
 
     fun deleteJoke(joke: JokeInfo, context: Context) {
-        jokeGetRepository.deleteJoke(joke,context)
+        viewModelScope.launch {
+            jokeGetRepository.deleteJoke(joke,context)
+            jokeGetRepository.getWordsList(context)
+        }
     }
 
     fun shareJoke(activity:Activity,joke: JokeInfo? = jokeInfo.value){

@@ -48,7 +48,7 @@ class JokeGetRepository @Inject constructor(
         localJokeModel.deleteJoke(joke,context)
     }
 
-    override suspend fun getWordsList(context: Context): LiveData<PagedList<Words>>? {
+    override suspend fun getWordsList(context: Context): LiveData<List<Words>>? {
         return localJokeModel.getWordsList(context)
     }
 
