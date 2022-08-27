@@ -1,0 +1,80 @@
+put	https://onlinebusiness.icbc.com/deas-api/v1/web/lock
+{
+	"appointmentDt": {
+		"date": "2023-01-11",
+		"dayOfWeek": "Wednesday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"drvrDriver": {
+		"drvrId": 1785920
+	},
+	"drscDrvSchl": {},
+	"instructorDlNum": null,
+	"bookedTs": "2022-08-25T23:31:14",
+	"startTm": "14:50",
+	"endTm": "15:35",
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNDo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTEiLCJlbmRUbSI6IjE1OjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.XAdQ8xSKE418MICaLWW-zTYV7v0_yNzH0XjIgqi24JE"
+}
+
+//
+
+{
+	"appointmentDt": {
+		"date": "2023-01-11",
+		"dayOfWeek": "Wednesday"
+	},
+	"endTm": "15:35",
+	"lemgMsgId": 0,
+	"posId": 274,
+	"resourceId": 17252,
+	"startTm": "14:50",
+	"bookedIndicator": "ACTIVE",
+	"bookedTs": "2022-08-25T23:31:14",
+	"drscDrvSchl": {},
+	"drvrDriver": {
+		"drvrId": 1785920,
+		"email": "squall8111@gmail.com",
+		"firstName": "YAN",
+		"lastName": "CUI",
+		"licenseNumber": "4711957",
+		"optInFlags": {
+			"email": "Y",
+			"sms": "Y"
+		},
+		"phoneNum": "(604) 788-9868"
+	},
+	"officeNum": 94258,
+	"posName": "BURNABY CLAIM CENTRE",
+	"statusCode": "LOCKED",
+	"checkTm": "14:35",
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "Class 7 Road Test"
+	},
+	"posGeo": {
+		"address": "4399 Wayburne Drive, Burnaby, BC V5G 3X7",
+		"address1": "4399 Wayburne Drive",
+		"agency": "Burnaby claim centre (Wayburne Drive)",
+		"city": "Burnaby",
+		"lat": 49.2445556,
+		"lng": -122.9989364,
+		"posId": 274,
+		"postcode": "V5G 3X7",
+		"province": "BC",
+		"url": "https://www.google.com/maps/search/?api=1&query=49.244556,-122.998936&query_place_id=ChIJa2jWXx53hlQR2eFId44dYEw"
+	}
+}
+
+post URL	https://onlinebusiness.icbc.com/deas-api/v1/web/msgs
+{
+	"aPosID": 274,
+	"lemgMsgID": 14,
+	"appointmentDt": "2023-01-11"
+}
+
+["Bring your primary and secondary identification.  Bring a safe and reliable vehicle. If there are any problems such as dash warnings, broken or burnt out lights or unsafe tires, the test may be cancelled.  Visit icbc.com for further details. Report 15 minutes early to the road test counter with your plate number. The cost is $35 for the road test, $75 for the new licence.  If you owe ICBC any money or have any fines they will need to be paid.  If you need to cancel or change your road test we need more than 48 hours notice or there is a $25 cancellation fee.", "Burnaby claim centre (Wayburne Drive)\n4399 Wayburne Drive, Burnaby, BC V5G 3X7\n"]

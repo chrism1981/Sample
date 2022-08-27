@@ -36,6 +36,10 @@ import android.provider.Telephony
 import android.os.Build
 import androidx.annotation.NonNull
 import android.R.attr.phoneNumber
+import android.util.Log
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 /**
@@ -45,6 +49,7 @@ import android.R.attr.phoneNumber
 class PreviewFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
     private val sharedPreViewModel: SharedPreViewModel by activityViewModels()
+    private var token: String? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -61,14 +66,11 @@ class PreviewFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initClick()
+//        initClick()
+
     }
 
     private fun initClick() {
-        add.setOnClickListener {
-            activity?.let { it1 -> sharedPreViewModel.getJokeFromServer(it1) }
-
-        }
         favorite.setOnClickListener {
             context?.let { it1 -> sharedPreViewModel.addToFavorite(it1) }
         }
@@ -123,7 +125,7 @@ class PreviewFragment : Fragment() {
         if (defaultSmsPackageName != null) {
             sendIntent.setPackage(defaultSmsPackageName)
         }
-        activity!!.startActivity(sendIntent)
+        requireActivity().startActivity(sendIntent)
     }
 
 }

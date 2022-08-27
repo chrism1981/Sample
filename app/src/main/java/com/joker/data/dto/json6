@@ -1,0 +1,27 @@
+Method	PUT URL	https://onlinebusiness.icbc.com/deas-api/v1/web/book
+
+{
+	"userId": "WEBD:1785920",
+	"appointment": {
+		"drvrDriver": {
+			"drvrId": 1785920
+		}
+	}
+}
+
+{
+	"code": "success",
+	"description": "successful operation"
+}
+//book 以后调用了空的 lock,可能是解锁,无返回
+Method	PUT URL	https://onlinebusiness.icbc.com/deas-api/v1/web/lock
+
+{
+	"appointmentDt": {},
+	"dlExam": {},
+	"drvrDriver": {
+		"drvrId": 1785920
+	},
+	"drscDrvSchl": {}
+}
+

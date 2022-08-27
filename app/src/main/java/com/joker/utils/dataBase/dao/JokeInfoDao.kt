@@ -46,6 +46,7 @@ abstract class JokeInfoDao : BaseDao<JokeInfo>() {
     @Query("SELECT * FROM JokeInfo WHERE id = :id")
     abstract fun getJokeById(id:String?): Single<JokeInfo>
 
+
     @Query("DELETE FROM JokeInfo")
     protected abstract fun deleteAll()
 

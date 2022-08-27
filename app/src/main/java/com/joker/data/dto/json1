@@ -1,0 +1,57 @@
+put  https://onlinebusiness.icbc.com/deas-api/v1/webLogin/webLogin
+
+request
+
+{
+	"drvrLastName": "cui",
+	"licenceNumber": "47119",
+	"keyword": ""
+}
+
+response
+
+{
+	"drvrId": 1785920,
+	"email": "squall8111@gmail.com",
+	"firstName": "YAN",
+	"lastName": "CUI",
+	"licenseNumber": "4711957",
+	"optInFlags": {
+		"email": "Y",
+		"sms": "Y"
+	},
+	"phoneNum": "6047889868",
+	"blockedEligibleExams": [],
+	"cancellationFeeTotal": 0,
+	"eligibleExams": [{
+		"code": "7-R-1",
+		"description": "Class 7 Road Test",
+		"eed": {
+			"date": "2022-08-26",
+			"dayOfWeek": "Friday"
+		}
+	}],
+	"expandedStatus": [{
+		"description": "CUSTOMER ADVISED OF BC TRANSPLANT PROGRAM",
+		"master": "0",
+		"masterDesc": "Normal",
+		"section": "3",
+		"status": "BCTP"
+	}, {
+		"description": "",
+		"master": "",
+		"masterDesc": "",
+		"section": "",
+		"status": "    "
+	}, {
+		"description": "",
+		"master": "",
+		"masterDesc": "",
+		"section": "",
+		"status": "    "
+	}],
+	"glpTrainingFlag": "N",
+	"maxofMaxBookingDays": 180,
+	"webAappointments": [],
+	"webMaxSlots": 24
+}

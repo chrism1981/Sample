@@ -144,7 +144,9 @@ dependencies {
     implementation 'com.facebook.android:facebook-android-sdk:latest.release'
     implementation 'com.facebook.android:facebook-share:latest.release'
     implementation 'com.github.getActivity:XXPermissions:12.6'
-
+    implementation project(':SmsObserverLibrary')
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation("org.greenrobot:eventbus:3.3.1")
 }
 kapt {
     correctErrorTypes true

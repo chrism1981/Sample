@@ -1,8 +1,11 @@
 package com.joker.viewModel.preView
 
+import ambimi.rogue.core.data.LogoutReq
+import ambimi.rogue.core.data.PositionReq
 import android.app.Activity
 import android.content.Context
 import android.net.Uri
+import android.util.Log
 import android.widget.Toast
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
@@ -12,14 +15,15 @@ import androidx.paging.PagedList
 import com.facebook.share.model.ShareLinkContent
 import com.facebook.share.widget.ShareDialog
 import com.joker.BASE_URL
-import com.joker.data.dto.JokeInfo
-import com.joker.data.dto.Words
+import com.joker.data.dto.*
+import com.joker.data.remoteService.ServiceGenerator
+import com.joker.data.remoteService.service.JokeService
 import com.joker.data.repository.JokeGetRepository
-import com.joker.utils.dataBase.DBHelper
+import com.joker.ui.main.FavoriteFragment
 import com.joker.viewModel.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -29,7 +33,8 @@ import javax.inject.Inject
  * viewModel used for data processing
  */
 @HiltViewModel
-class SharedPreViewModel @Inject constructor(private val jokeGetRepository: JokeGetRepository) :
+class SharedPreViewModel @Inject constructor(private val jokeGetRepository: JokeGetRepository, private val serviceGenerator: ServiceGenerator
+) :
     BaseViewModel() {
 
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
@@ -39,21 +44,42 @@ class SharedPreViewModel @Inject constructor(private val jokeGetRepository: Joke
 
     //if add a new joke, notify the joke list
     var upDatedId = MutableLiveData<String>()
+    val jokeService = serviceGenerator.createService(JokeService::class.java)
+    var stopQuery = false
 
-    fun getJokeFromServer(context: Context) {
-        viewModelScope.launch {
-            jokeGetRepository.requestJoke().collect {
-                it.data?.joke?.apply {
-                    val dao = DBHelper.getDataBase(context)?.jokeDao()
-                    dao?.queryWithKey<JokeInfo>(it.data.id, {
-                        //if database contains this joke, fetch again
-                        getJokeFromServer(context)
-                    }, {
-                        jokeInfo.value = it.data
-                    })
-                }
-            }
+    suspend fun getJokeFromServer(context: Context): String? {
+        return jokeGetRepository.requestJoke()
+    }
+
+    suspend fun queryPosition(token: String,onfail: (code:Int)-> Unit, queryOjb:PositionReq): List<PositionData?>{
+        //,PositionReq(aPosID = 275)
+        val re = jokeService.checkPosition(token, queryOjb)
+        Log.e("check position code ",re.code().toString() )
+        if (!re.isSuccessful){
+            onfail.invoke(re.code())
+            return emptyList()
         }
+        return re.body()?: emptyList()
+    }
+
+    suspend fun logout(token: String){
+        jokeService.logout(token, LogoutReq())
+    }
+
+    suspend fun lock(token: String, position: PositionData):Boolean{
+        return jokeService.lock(token, position).isSuccessful
+    }
+
+    suspend fun sendCode(token: String, position: SendCodeReq):Boolean{
+        return jokeService.sendCode(token, position).isSuccessful
+    }
+
+    suspend fun verifyCode(token: String, position: VerifyCodeReq):Boolean{
+        return jokeService.verifyCode(token, position).isSuccessful
+    }
+
+    suspend fun book(token: String, position: BookReq):Boolean{
+        return jokeService.book(token, position).isSuccessful
     }
 
     suspend fun getLocalJokes(context: Context): LiveData<PagedList<JokeInfo>>? {

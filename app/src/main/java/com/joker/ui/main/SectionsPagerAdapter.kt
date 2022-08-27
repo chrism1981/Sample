@@ -11,7 +11,8 @@ private val TAB_TITLES = arrayOf(
     R.string.tab_text_2,
     R.string.tab_text_statistic
 )
-private val fragments by lazy { arrayOf(PreviewFragment(),FavoriteFragment(),StatisticFragment()) }
+
+private val fragments by lazy { arrayOf(FavoriteFragment()) }
 
 class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm) {

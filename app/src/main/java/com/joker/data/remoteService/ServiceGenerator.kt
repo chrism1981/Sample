@@ -49,7 +49,7 @@ class ServiceGenerator @Inject constructor() {
         }
 
     init {
-        okHttpBuilder.addInterceptor(headerInterceptor)
+//        okHttpBuilder.addInterceptor(headerInterceptor)
         okHttpBuilder.addInterceptor(logger)
         okHttpBuilder.connectTimeout(timeoutConnect.toLong(), TimeUnit.SECONDS)
         okHttpBuilder.readTimeout(timeoutRead.toLong(), TimeUnit.SECONDS)

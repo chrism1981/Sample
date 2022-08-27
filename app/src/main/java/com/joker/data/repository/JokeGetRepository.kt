@@ -28,8 +28,8 @@ class JokeGetRepository @Inject constructor(
 ) :
     JokeGetRepositorySource {
 
-    override suspend fun requestJoke(): Flow<Resource<JokeInfo>> {
-        return flow { emit(remoteJokeModel.requestJoke()) }.flowOn(ioDispatcher)
+    override suspend fun requestJoke(): String? {
+        return remoteJokeModel.requestJoke()
     }
 
     override suspend fun getLocalJokes(context: Context): LiveData<PagedList<JokeInfo>>? {

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="jokeInfo"
-            type="com.joker.data.dto.JokeInfo" />
+            type="com.joker.data.dto.PositionData" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -19,7 +19,7 @@
             <TextView
                 android:id="@+id/joke"
                 style="@style/TextAppearance.AppCompat.Medium"
-                android:text="@{jokeInfo.joke}"
+                android:text="@{jokeInfo.appointmentDt.date}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"

@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.Flow
  */
 
 interface JokeGetRepositorySource {
-    suspend fun requestJoke(): Flow<Resource<JokeInfo>>
+    suspend fun requestJoke(): String?
     suspend fun getLocalJokes(context: Context): LiveData<PagedList<JokeInfo>>?
     fun addToFavorite(joke: JokeInfo,context: Context,success: ()->Unit)
     fun updateJoke(joke:JokeInfo,context: Context,success: ()->Unit)

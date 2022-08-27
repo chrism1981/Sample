@@ -1,0 +1,375 @@
+
+post URL	https://onlinebusiness.icbc.com/deas-api/v1/web/getAvailableAppointments
+
+{
+	"aPosID": 274,
+	"examType": "7-R-1",
+	"examDate": "2022-08-26",
+	"ignoreReserveTime": false,
+	"prfDaysOfWeek": "[0,1,2,3,4,5,6]",
+	"prfPartsOfDay": "[0,1]",
+	"lastName": "CUI",
+	"licenseNumber": "4711957"
+}
+
+[{
+	"appointmentDt": {
+		"date": "2023-01-11",
+		"dayOfWeek": "Wednesday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "15:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNDo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTEiLCJlbmRUbSI6IjE1OjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.XAdQ8xSKE418MICaLWW-zTYV7v0_yNzH0XjIgqi24JE",
+	"startTm": "14:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-11",
+		"dayOfWeek": "Wednesday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "16:20",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17950,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNTozNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzk1MCwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTEiLCJlbmRUbSI6IjE2OjIwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.73RYVe8HTK0MgRIdMsk_A_APpToduNf9p-gh3LZnT64",
+	"startTm": "15:35"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-12",
+		"dayOfWeek": "Thursday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "10:05",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIwOToyMCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTIiLCJlbmRUbSI6IjEwOjA1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.8yy_8xzkKo6Wjz6jBXEfUq1JVagdp4CgOVzPkTaMs6Y",
+	"startTm": "09:20"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-12",
+		"dayOfWeek": "Thursday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "11:05",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 16361,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMDoyMCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNjM2MSwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTIiLCJlbmRUbSI6IjExOjA1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.S1vdh9drEe91cDO4QE9u5Nbov9-iuXrVLR_CjI5JsCA",
+	"startTm": "10:20"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-12",
+		"dayOfWeek": "Thursday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "11:50",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 16361,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMTowNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNjM2MSwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTIiLCJlbmRUbSI6IjExOjUwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.XKeAehjDsVoNsoi4ZxJiwSRLRLHR78rIwgCKhXrOAl0",
+	"startTm": "11:05"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-12",
+		"dayOfWeek": "Thursday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "12:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17473,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMTo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzQ3MywiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTIiLCJlbmRUbSI6IjEyOjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.KAPi3rixTOeOwzXaoJe9Unqakvuhr3oUoNS8U_6wEwY",
+	"startTm": "11:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-12",
+		"dayOfWeek": "Thursday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "13:50",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMzowNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTIiLCJlbmRUbSI6IjEzOjUwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.IQxID0OwhklrCiKivz851hbju6KhMB0bel8oX6DTCkY",
+	"startTm": "13:05"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-12",
+		"dayOfWeek": "Thursday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "15:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 16361,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNDo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNjM2MSwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTIiLCJlbmRUbSI6IjE1OjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.ctm3Z9KeeDyjf1CzQlDRwqgkP2ze3XC5ACk3I4QEM7U",
+	"startTm": "14:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-12",
+		"dayOfWeek": "Thursday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "16:20",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNTozNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTIiLCJlbmRUbSI6IjE2OjIwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.BleCqIARq1JBuQzewUiUy9iI8YWbhEBjEUD12Lj4Fjg",
+	"startTm": "15:35"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "09:20",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17473,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIwODozNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzQ3MywiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjA5OjIwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.Y8xPAJuYf4BqHxQS8r4JeEHWOdKyrawr2AReLQDUrD4",
+	"startTm": "08:35"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "10:05",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIwOToyMCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjEwOjA1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.HzuBmSqc5_BkuY5HND4T3FHBnpc8qoQgWNFni6GDTok",
+	"startTm": "09:20"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "11:05",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 16361,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMDoyMCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNjM2MSwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjExOjA1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.5mh_mLpIXQalbFRs814M4sGHlM0PCPAYfDrKU7umWz0",
+	"startTm": "10:20"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "11:50",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 16361,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMTowNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNjM2MSwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjExOjUwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.FDaWLpqaQVnSg5f1S3EX7Y0QvRRtcoP-63grhUtA9NQ",
+	"startTm": "11:05"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "12:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMTo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjEyOjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.WMZOObyUhqpkdUj5TorlhjW4Pm1GuDIp_NiwZPCKP5E",
+	"startTm": "11:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "13:50",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMzowNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjEzOjUwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.TdGKohNqd_Wd_OL0NUCo64kp7ECnF7qxg9xZDsfP3pk",
+	"startTm": "13:05"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "15:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNDo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjE1OjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.ic4cnvQ4vw2xBEqryr3vZaizXVoelqcSnYjvwHNuyD8",
+	"startTm": "14:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-13",
+		"dayOfWeek": "Friday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "16:20",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17473,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNTozNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzQ3MywiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTMiLCJlbmRUbSI6IjE2OjIwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.UGqSusxw-vYZ1IzTWurUf6_cJi28TewSlg4QCp1KvAk",
+	"startTm": "15:35"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-16",
+		"dayOfWeek": "Monday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "09:20",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17473,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIwODozNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzQ3MywiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTYiLCJlbmRUbSI6IjA5OjIwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.zu_m6_FnTyKaxY-_fSoRo3PCiTIaVPS-AKB13zjxgMQ",
+	"startTm": "08:35"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-16",
+		"dayOfWeek": "Monday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "10:05",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIwOToyMCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTYiLCJlbmRUbSI6IjEwOjA1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.ueKPfSdqzzoUxF5kUenK2oYzRA1jm0Hb1VRCRHHTPBo",
+	"startTm": "09:20"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-16",
+		"dayOfWeek": "Monday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "12:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17473,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMTo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzQ3MywiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTYiLCJlbmRUbSI6IjEyOjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.iUrzh3PS_hiB4Cgrcb0w6FWk_BGuoemjuB7oehYuOIo",
+	"startTm": "11:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-16",
+		"dayOfWeek": "Monday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "13:50",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17950,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMzowNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzk1MCwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTYiLCJlbmRUbSI6IjEzOjUwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.iwSRfBVYIvBbY2lYnDR74PiAg8Yj5ki-MXWnZfm0W9o",
+	"startTm": "13:05"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-16",
+		"dayOfWeek": "Monday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "14:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17473,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxMzo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzQ3MywiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTYiLCJlbmRUbSI6IjE0OjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.d6p_EqbW80oATZ3oUdV5we-RUkWxZPM84eXmJ71Dt-s",
+	"startTm": "13:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-16",
+		"dayOfWeek": "Monday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "15:35",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17252,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNDo1MCIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzI1MiwiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTYiLCJlbmRUbSI6IjE1OjM1IiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9.z3cadMAdePkzOTrHL_JIoiK8bZpiLZV4cOcqZey7QAM",
+	"startTm": "14:50"
+}, {
+	"appointmentDt": {
+		"date": "2023-01-16",
+		"dayOfWeek": "Monday"
+	},
+	"dlExam": {
+		"code": "7-R-1",
+		"description": "7-R-ROAD"
+	},
+	"endTm": "16:20",
+	"lemgMsgId": 14,
+	"posId": 274,
+	"resourceId": 17473,
+	"signature": "eyJhbGciOiJIUzI1NiJ9.eyJkbEV4YW0iOiI3LVItUk9BRCIsInN0YXJ0VG0iOiIxNTozNSIsInBvc0lkIjoyNzQsInN1YiI6IjQ3MTE5NTciLCJyZXNvdXJjZUlkIjoxNzQ3MywiYXBwb2ludG1lbnREdCI6IjIwMjMtMDEtMTYiLCJlbmRUbSI6IjE2OjIwIiwiZXhwIjoxNjYxNDk3MDA5LCJpYXQiOjE2NjE0OTUyMDl9._NUUXuJ9QCv_r0Oghmn681skoYaats_IGj9W3OXuoAw",
+	"startTm": "15:35"
+}]
